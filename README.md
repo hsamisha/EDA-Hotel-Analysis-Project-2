@@ -1,6 +1,6 @@
-# 🏨 Hotel Harmony – Hotel Operations Analysis
+# 🏨EDA Hotel Analysis
 
-## 📌 Project Overview
+##Project Overview
 
 **Hotel Harmony – Data Insights for Optimized Operations** is a data analysis project focused on understanding hotel booking patterns, guest behavior, cancellations, pricing, and operational performance.
 
@@ -10,7 +10,7 @@ The analysis covers booking behavior, hotel types, arrival trends, cancellations
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The main objectives of this project are:
 
@@ -30,7 +30,7 @@ The main objectives of this project are:
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 ### Hotel Bookings Dataset
 
@@ -66,7 +66,7 @@ Important attributes include:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology                     | Purpose                   |
 | ------------------------------ | ------------------------- |
@@ -79,7 +79,7 @@ Important attributes include:
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ```text
 Data Collection
@@ -107,7 +107,7 @@ Key Insights
 
 ---
 
-## 🔍 Data Exploration
+## Data Exploration
 
 The project begins by loading the hotel booking dataset and examining:
 
@@ -123,7 +123,7 @@ This provides an initial understanding of the dataset before performing analysis
 
 ---
 
-## 🧹 Data Cleaning
+## Data Cleaning
 
 The following data-cleaning operations were performed:
 
@@ -145,34 +145,8 @@ These steps prepare the dataset for reliable analysis and visualization.
 
 ---
 
-## ⚙️ Feature Engineering
 
-Two additional features were created during preprocessing.
-
-### Total Stay Nights
-
-```python
-hotel_clean["total_stay_nights"] = (
-    hotel_clean["stays_in_weekend_nights"] +
-    hotel_clean["stays_in_week_nights"]
-)
-```
-
-This combines weekend and weekday stays into a single measure.
-
-### Cancellation Label
-
-```python
-hotel_clean["cancellation_label"] = hotel_clean["is_canceled"].map(
-    {0: "Not Canceled", 1: "Canceled"}
-)
-```
-
-This converts the numerical cancellation indicator into an easy-to-understand categorical label.
-
----
-
-# 📊 Analysis Performed
+# Analysis Performed
 
 ## 1. Basic-Level Analysis
 
@@ -205,7 +179,7 @@ The corresponding calculations are implemented in the analysis code.
 
 ---
 
-# 📈 Visualizations
+# Visualizations
 
 The project contains multiple visualizations to understand hotel operations.
 
@@ -222,7 +196,7 @@ These visualizations provide a graphical overview of booking and operational pat
 
 ---
 
-# 📊 Medium-Level Analysis
+# 📊Medium-Level Analysis
 
 The project also performs more detailed analysis.
 
@@ -312,7 +286,7 @@ Hotel-Operations-Analysis/
 
 ---
 
-# ▶️ How to Run the Project
+# How to Run the Project
 
 ## Step 1: Clone the Repository
 
@@ -366,7 +340,7 @@ Insights
 
 ---
 
-# 📌 Conclusion
+# Conclusion
 
 The **Hotel Harmony – Hotel Operations Analysis** project provides a structured analysis of hotel booking data using Python.
 
